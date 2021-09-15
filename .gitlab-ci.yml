@@ -1,0 +1,6 @@
+image: elixxirlabs/cuda-go:go1.16-cuda11.1
+
+upload:
+  stage: upload
+  script:
+    - /upload-artifact-nohash.sh client/errors clientErrors.json
